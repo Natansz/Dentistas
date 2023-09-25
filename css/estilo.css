@@ -1,0 +1,98 @@
+body{
+    padding: 0;
+    margin: 0 auto;
+    box-sizing: border-box;
+}
+
+::-webkit-scrollbar {
+  background-color: rgb(204, 204, 204);
+  width: 10px;
+
+
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #878787;
+  border-radius: 10px;
+
+}
+
+ 
+
+/* Estilo para o topo (header) */
+ header {
+    background-color: #D3d3d3; /* Cor de fundo */
+    color: #fff; /* Cor do texto */
+    padding: 20px; /* Espaçamento interno */
+    display: flex; /* Exibe os elementos em linha */
+    justify-content: space-between; /* Alinha elementos ao espaço disponível */
+    align-items: center; /* Centraliza verticalmente os elementos */
+}
+
+/* Estilo para a imagem à esquerda */
+.logo {
+    width: 100px; /* Largura da imagem */
+    height: auto; /* Altura automática para manter a proporção */
+}
+
+/* Estilo para os links centralizados */
+.nav-links {
+    text-align: center; /* Alinha texto ao centro */
+}
+
+.nav-links a {
+    padding: 10px;
+}
+
+/* Estilo para o botão de login à direita */
+.login-button {
+    background-color: #878787; /* Cor de fundo do botão */
+    color: #fff; /* Cor do texto do botão */
+    padding: 10px 20px; /* Espaçamento interno do botão */
+    border: none; /* Remove a borda do botão */
+    cursor: pointer; /* Cursor ao passar por cima do botão */
+    border-radius: 10px;
+}
+/*********************************************************************************************************************/
+
+/* Estilos para o banner */
+.banner {
+    position: relative;
+    width: 100%;
+    height: 93vh; /* Ajuste a altura conforme necessário */
+    background-image: url('../img/MicrosoftTeams-image\ \(6\)\ \(1\).png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    opacity: 100%; /* Sem opacidade */
+}
+
+/* Estilos para o texto */
+.texto {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: #fff; /* Cor do texto */
+    font-size: 24px; /* Tamanho da fonte */
+    font-weight: bold;
+}
+
+/* Estilos para o botão */
+.botao {
+    background-color: #878787; /* Cor de fundo do botão */
+    color: #fff; /* Cor do texto do botão */
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+/* Estilos para o botão quando hover (passar o mouse por cima) */
+.botao:hover {
+    background-color: #0056b3; /* Cor de fundo do botão no hover */
+}
+
+/*****************************************************************************/
