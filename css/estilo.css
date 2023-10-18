@@ -1,70 +1,83 @@
-body{
+body {
     padding: 0;
     margin: 0 auto;
     box-sizing: border-box;
 }
 
+.sitemax {
+
+    max-width: 1200px;
+    margin: 0 auto;
+    /* Centraliza o conteúdo na página */
+}
+
 ::-webkit-scrollbar {
-  background-color: rgb(204, 204, 204);
-  width: 10px;
+    background-color: rgb(204, 204, 204);
+    width: 10px;
 
 
 }
 
 ::-webkit-scrollbar-thumb {
-  background-color: #878787;
-  border-radius: 10px;
+    background-color: #878787;
+    border-radius: 10px;
 
 }
 
- 
+
 
 /* Estilo para o topo (header) */
- header {
-    background-color: #D3d3d3; /* Cor de fundo */
-    color: #fff; /* Cor do texto */
-    padding: 20px; /* Espaçamento interno */
-    display: flex; /* Exibe os elementos em linha */
-    justify-content: space-between; /* Alinha elementos ao espaço disponível */
-    align-items: center; /* Centraliza verticalmente os elementos */
+.bg-body-tertiary {
+    background-color: white;
+
 }
 
 /* Estilo para a imagem à esquerda */
 .logo {
-    width: 100px; /* Largura da imagem */
-    height: auto; /* Altura automática para manter a proporção */
+    max-width: 250px;
+    /* Garante que a imagem não ultrapasse a largura do contêiner */
+
 }
 
 /* Estilo para os links centralizados */
-.nav-links {
-    text-align: center; /* Alinha texto ao centro */
+.navbar-nav a {
+    text-decoration: none;
+    text-transform: uppercase;
+    padding: 20px;
 }
 
-.nav-links a {
-    padding: 10px;
-}
 
 /* Estilo para o botão de login à direita */
 .login-button {
-    background-color: #878787; /* Cor de fundo do botão */
-    color: #fff; /* Cor do texto do botão */
-    padding: 10px 20px; /* Espaçamento interno do botão */
-    border: none; /* Remove a borda do botão */
-    cursor: pointer; /* Cursor ao passar por cima do botão */
+    background-color: #878787;
+    color: #fff;
+    padding: 10px 20px;
+    text-decoration: none;
+    border: none;
+    text-transform: uppercase;
+    cursor: pointer;
     border-radius: 10px;
 }
+
+.login-button:hover {
+    background-color: #fff;
+    color: #878787;
+}
+
 /*********************************************************************************************************************/
 
 /* Estilos para o banner */
 .banner {
     position: relative;
     width: 100%;
-    height: 93vh; /* Ajuste a altura conforme necessário */
+    height: 93vh;
+    /* Ajuste a altura conforme necessário */
     background-image: url('../img/MicrosoftTeams-image\ \(6\)\ \(1\).png');
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
-    opacity: 100%; /* Sem opacidade */
+    opacity: 100%;
+    /* Sem opacidade */
 }
 
 /* Estilos para o texto */
@@ -74,25 +87,509 @@ body{
     left: 50%;
     transform: translate(-50%, -50%);
     text-align: center;
-    color: #fff; /* Cor do texto */
-    font-size: 24px; /* Tamanho da fonte */
+    color: #fff;
+    /* Cor do texto */
+    font-size: 24px;
+    /* Tamanho da fonte */
     font-weight: bold;
 }
 
 /* Estilos para o botão */
 .botao {
-    background-color: #878787; /* Cor de fundo do botão */
-    color: #fff; /* Cor do texto do botão */
+    background-color: #878787;
+    /* Cor de fundo do botão */
+    color: #fff;
+    /* Cor do texto do botão */
     padding: 10px 20px;
     border: none;
     border-radius: 5px;
     font-size: 16px;
     cursor: pointer;
+    text-decoration: none;
 }
 
 /* Estilos para o botão quando hover (passar o mouse por cima) */
 .botao:hover {
-    background-color: #0056b3; /* Cor de fundo do botão no hover */
+    background-color: white;
+    color: #878787;
+    /* Cor de fundo do botão no hover */
+}
+
+/* *************************************************************************** */
+
+.sobre {
+
+
+    display: flex;
+    grid-template-columns: 1fr 1fr;
+    /* Divide a largura em duas colunas iguais */
+    gap: 20px;
+    /* Espaçamento entre colunas */
+    align-items: center;
+    /* Centraliza verticalmente os itens */
+}
+
+.sobre div {
+    padding: 50px;
+}
+
+.sobre img {
+    max-width: 50%;
+    /* Garante que a imagem não ultrapasse a largura do contêiner */
+    height: auto;
+    /* Mantém a proporção da imagem */
+    display: block;
+    /* Remove espaços em branco extras ao redor da imagem */
+    margin: 0 auto;
+    /* Centraliza horizontalmente a imagem */
+}
+
+.sobre p {
+    width: auto;
 }
 
 /*****************************************************************************/
+.titulo{
+    display: flex;
+    justify-content: center;
+    
+}
+
+.servico h3 {
+    text-align: center;
+}
+
+.cardservico h3 {
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 20px;
+}
+
+.servicopai {
+    display: flex;
+    justify-content: center;
+    padding: 25px;
+    margin-left: 4%;
+}
+
+.cardservico1 {
+    position: relative;
+    width: 300px;
+    height: 200px;
+    background-color: #f2f2f2;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    margin: 0px 15px;
+    perspective: 1000px;
+    box-shadow: 0 0 0 5px #ffffff80;
+    transition: all 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.cardservico1 img {
+    fill: #333;
+    transition: all 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.cardservico1:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(255, 255, 255, 0.2);
+}
+
+.cardcontent1 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    padding: 20px;
+    box-sizing: border-box;
+    background-color: #f2f2f2;
+    transform: rotateX(-90deg);
+    transform-origin: bottom;
+    transition: all 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.cardservico1:hover .cardcontent1 {
+    transform: rotateX(0deg);
+}
+
+.cardtitle1 {
+    margin: 0;
+    font-size: 24px;
+    color: #333;
+    font-weight: 700;
+}
+
+.cardservico1:hover img {
+    scale: 0;
+}
+
+.carddescription1 {
+    margin: 10px 0 0;
+    font-size: 14px;
+    color: #777;
+    line-height: 1.4;
+}
+
+.card__button {
+    margin-top: 10px;
+    border-radius: 8px;
+    background: #446688;
+    border: none;
+    color: white;
+}
+
+.card__button:hover {
+    margin-top: 10px;
+    border-radius: 8px;
+    background: #161925;
+    border: none;
+    color: white;
+}
+
+.secondary {
+    background: transparent;
+    color: #777;
+    border: 1px solid #777;
+}
+
+
+
+
+
+
+
+
+/* ***************************************************************************************************************** /* ******************************************************************************************************************* */
+*/ .nossoplanostitulo {
+    justify-content: center;
+    display: flex;
+    padding: 35px;
+}
+
+.nossoplanostitulo h3 {
+    padding: auto;
+
+}
+
+.planopai {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+
+.cardplano {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    width: 260px;
+    padding: 20px 1px;
+    margin: 10px 0;
+    text-align: center;
+    position: relative;
+    cursor: pointer;
+    box-shadow: 0 10px 15px -3px rgba(33, 150, 243, .4), 0 4px 6px -4px rgba(33, 150, 243, .4);
+    border-radius: 10px;
+    background-color: #C9FCFF;
+
+    margin: 0px 10px 0px 10px;
+}
+
+.contentplano {
+    padding: 20px;
+}
+
+.contentplano .priceplano {
+    color: black;
+    font-weight: 800;
+    font-size: 50px;
+
+}
+
+.contentplano .descriptionplano {
+    color: black;
+    margin-top: 10px;
+    font-size: 14px;
+}
+
+.contentplano .titleplano {
+    font-weight: 800;
+    text-transform: uppercase;
+    color: black;
+    margin-top: 10px;
+    font-size: 25px;
+    letter-spacing: 1px;
+}
+
+.planopai button {
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    user-select: none;
+    border: none;
+    outline: none;
+    color: black;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: .75rem;
+    padding: 0.75rem 1.5rem;
+    background: #Fff;
+    border-radius: 0.5rem;
+    width: 90%;
+
+}
+
+.planopai button:hover {
+    background: #36A2EB;
+    color: azure;
+}
+
+/****************************************************************************************************************************  */
+.dentistaspai {
+    display: flex;
+    justify-content: ;
+}
+
+.carddentistas1 {
+    width: 190px;
+    height: 500px;
+    background: white;
+    padding: .4em;
+    border-radius: 6px;
+}
+
+
+.carddentistas2 {
+    width: 190px;
+    height: 600px;
+    background: white;
+    padding: .4em;
+    border-radius: 6px;
+}
+
+.cardimagemdentistas {
+    background-color: rgb(236, 236, 236);
+    width: 177px;
+    height: 130px;
+    border-radius: 6px 6px 0 0;
+}
+
+.cardimagemdentistas:hover {
+    transform: scale(0.98);
+}
+
+.categorydentistas {
+    text-transform: uppercase;
+    font-size: 0.7em;
+    font-weight: 600;
+    color: rgb(63, 121, 230);
+    padding: 10px 7px 0;
+}
+
+.category:hover {
+    cursor: pointer;
+}
+
+.headingdentistas {
+    font-weight: 600;
+    color: rgb(88, 87, 87);
+    padding: 7px;
+}
+
+.headingdentistas:hover {
+    cursor: pointer;
+}
+
+.authordentista {
+    color: gray;
+    font-weight: 400;
+    font-size: 11px;
+    padding-top: 20px;
+}
+
+.name {
+    font-weight: 600;
+}
+
+.name:hover {
+    cursor: pointer;
+}
+
+.sobredentistas {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    /* Divide a largura em duas colunas iguais */
+    gap: 20px;
+    /* Espaçamento entre colunas */
+    align-items: center;
+    /* Centraliza verticalmente os itens */
+    padding: 100px;
+}
+.dentistas{
+    display:flex;
+    justify-content: center;
+}
+
+.card {
+    width: 190px;
+    height: 254px;
+    background: rgb(103, 225, 255);
+    transition: all 0.4s;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px 5px rgba(0, 0, 0, 0.705);
+    font-size: 30px;
+    font-weight: 900;
+}
+
+.card:hover {
+    border-radius: 15px;
+    cursor: pointer;
+    transform: scale(1.2);
+    box-shadow: 0px 0px 10px 5px rgba(0, 0, 0, 0.705);
+    background: rgb(103, 151, 255);
+}
+
+.first-content {
+    height: 100%;
+    width: 100%;
+    transition: all 0.4s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 1;
+    border-radius: 15px;
+}
+
+.card:hover .first-content {
+    height: 0px;
+    opacity: 0;
+}
+
+.second-content {
+    height: 0%;
+    width: 100%;
+    opacity: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 15px;
+    transition: all 0.4s;
+    font-size: 0px;
+    transform: rotate(90deg) scale(-1);
+}
+
+.card:hover .second-content {
+    opacity: 1;
+    height: 100%;
+    font-size: 1.8rem;
+    transform: rotate(0deg);
+}
+
+/* *****************************************************************RODAPE*****************************************************************************/
+.rodape {
+    background-color: #878787;
+    color: white;
+    height: auto;
+    width: 100%;
+    font-size: 14px;
+    font-family: helvetica;
+}
+
+.rodape a {
+    text-decoration: none;
+    color: white;
+}
+
+.rodape p {
+    margin-bottom: 5px;
+}
+
+.rodape-div {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    margin: auto;
+    align-items: stretch;
+    padding: 60px 10px 40px 10px;
+}
+
+.rodape-div-1, .rodape-div-2, .rodape-div-3, .rodape-div-4 {
+    display: flex;
+    width: calc(100% / 4 - 20px);
+    padding: 10px;
+}
+
+.rodape span {
+    font-size: 20px;
+    color: white;
+}
+
+.rodape-direitos {
+    background-color: black;
+    padding: 10px;
+    margin: 0px;
+    text-align: center;
+}
+
+/*mobile*/
+@media (max-width: 700px) {
+    .login-button{
+        display: none
+    }
+    .sobre {
+        display: flex;
+        flex-direction: column;
+    }
+    .sobre div {
+        padding: 30px;
+    }
+    .sobre img {
+        max-width: 90%;
+    }
+    .titulo{
+        display: flex;
+        justify-content: center;
+        padding: 15px;   
+    }
+
+    .planopai {
+        justify-content: center;
+    }
+    
+    .cardplano {
+        margin: 10px 10px 15px 10px;
+    }
+    .sobredentistas{
+        display: flex;
+        flex-direction: column;
+    }
+    .dentistas{
+        display:flex;
+        justify-content: center;
+        width: 300px;
+        padding: 50px;
+    }
+    .sobrenossa{
+        margin-bottom: 1%;
+        width: 300px;
+    }
+
+    .rodape-div-1, .rodape-div-2, .rodape-div-3, .rodape-div-4 {
+        width: calc(100% - 20px);
+        padding: 10px;
+    }
+    .rodape-div-1 img{
+        margin: 0px 50px 0 50px;
+    }
+    }
+
+    .rodape-div {
+        padding: 60px 0px 40px 0px;
+    }
+}
+
+/* ******************************************************************************************************************************************************************************* */

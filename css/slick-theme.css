@@ -1,0 +1,16 @@
+.slick-next:before {
+    content: '→';
+    color: black;
+    margin-left: -50px;
+}
+.slick-prev:before {
+    content: '←';
+    color: black;
+}
+
+@media (max-width: 700px){
+    .slick-prev:before {
+        content: '←';
+        color: black;
+        margin-right: -30px;
+}

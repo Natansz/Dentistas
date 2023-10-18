@@ -1,60 +1,442 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="css/estilo.css">
-    <title>Document</title>
-</head>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="css/estilo.css">
+        <title>Document</title>
+        <!-- <link href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css
+" rel="stylesheet"> -->
+        <link rel="stylesheet" type="text/css"
+            href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+        <link rel="stylesheet" type="text/css"
+            href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"/>
+        <link rel="stylesheet"
+            href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
+            integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65"
+            crossorigin="anonymous">
+            <link rel="stylesheet" href="css/slick-theme.css">
+    </head>
 
-<body>
-    <header>
-        <img src="sua-imagem.jpg" alt="Logo" class="logo">
-        <div class="nav-links">
-            <a href="#">Home</a>
-            <a href="#">Planos de Serviço</a>
-            <a href="#">Sobre</a>
-            <a href="#">Destaques</a>
-        </div>
-        <button class="login-button">Login</button>
-    </header>
-    <main>
-        <section>
-            <div class="banner">
-                <div class="texto">
-                    <p>Clínica Dentária</p>
-                    <a href="#" class="botao">Clique Aqui</a>
+    <body>
+        <header>
+            <nav class="navbar navbar-expand-lg bg-body-tertiary sitemax">
+
+                <div class="container-fluid">
+                    <a class="navbar-brand mr-auto" href="#"><img class="logo"
+                            src="img/clinica.png" alt=""></a>
+
+                    <button class="navbar-toggler" type="button"
+                        data-bs-toggle="collapse"
+                        data-bs-target="#navbarNavAltMarkup"
+                        aria-controls="navbarNavAltMarkup" aria-expanded="false"
+                        aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div style="margin-right: 17%;" class="collapse
+                        navbar-collapse justify-content-center"
+                        id="navbarNavAltMarkup">
+                        <div class="navbar-nav">
+                            <a class="nav-link active" aria-current="page"
+                                href="#">Home</a>
+                            <a class="nav-link" href="#">Serviços e planos</a>
+                            <a class="nav-link" href="#">Sobre</a>
+                            <a class="nav-link" href="#">Dentistas</a>
+                        </div>
+
+                    </div>
+                    <button class="login-button">Login</button>
                 </div>
-            </div>
-        </section>
+            </nav>
 
-        <section style="text-align: center;">
-            <h1>Serviço Odontologico</h1>
+        </header>
 
-            <div class="servico">
-                <h3> Clareamento</h3>
+        <!-- ************************************************************************************************************************* -->
+        <main>
+            <section>
+                <div class="banner">
+                    <div class="texto">
+                        <p>Clínica Dentária</p>
+                        <a href="#" class="botao">Clique Aqui</a>
+                    </div>
+                </div>
+            </section>
+            <!-- ************************************************************************************************************************ -->
+            <section>
+
+                <div class="sitemax">
+
+                    <div class="sobre">
+                        <div>
+
+                            <h1>SOBRE NOSSA CLINICA DENTISTA</h1>
+                            <p style="width: auto;">Bem-vindo à Clínica
+                                Dentária [Nome da Sua Clínica],
+                                onde transformamos sorrisos e vidas. Nossa
+                                missão é
+                                ir além do convencional, proporcionando um
+                                ambiente
+                                acolhedor e tratamento personalizado. Contamos
+                                com
+                                uma equipe apaixonada, unindo perícia técnica
+                                com
+                                empatia. Oferecemos serviços odontológicos
+                                abrangentes, do preventivo ao estético. Nosso
+                                compromisso é garantir transparência, educação e
+                                conforto em cada etapa do tratamento. Junte-se a
+                                nós
+                                nessa jornada por um sorriso saudável e radiante
+                                na
+                                Clínica Dentária [Nome da Sua Clínica]. Cada
+                                sorriso
+                                conta uma história única, e nós valorizamos
+                                todas.
+                                Agende sua consulta e permita-nos transformar
+                                seu
+                                sorriso. Seja bem-vindo à Clínica Dentária [Nome
+                                da
+                                Sua Clínica], onde cada sorriso é prioridade.
+                            </p>
+                        </div>
+
+                        <img src="./img/img/imgsobre 1.svg" alt="">
+
+                    </div>
+                </div>
+
+
+            </section>
+            <!-- ********************************************************************************************************************** -->
+            <section>
                 <div>
-                    <img src="img/MicrosoftTeams-image (servico).png" alt="Imagem de serviço">
-                    <p class="titulo">O clareamento dental é um procedimento odontológico que visa branquear os
-                        dentes, removendo manchas e descolorações. Isso é geralmente realizado por meio de agentes
-                        clareadores, como o peróxido de hidrogênio, que penetram nos dentes e quebram as moléculas
-                        que causam a coloração. O processo pode ser feito no consultório do dentista ou em casa com
-                        kits aprovados pelo profissional. É um método popular para melhorar a estética do sorriso,
-                        deixando os dentes mais brancos e luminosos.
-                    </p>
+                    <div class="servico">
+                        <div class="titulo">
+                            <h3>TRATAMENTO</h3>
+                            <h3 style="margin-left: 10px ; color: cadetblue;">ODONTOLÓGICO</h3>
+                        </div>
+                    </div>
+                    <div class="carousel-container sitemax">
+                        <div class="servicopai">
+                            <button type="button" class="slick-prev slick-arrow" style="">Previous</button>
+
+                            <div class="cardservico">
+                                <div class="cardservico1">
+                                    <img src="img/IMG CLAREAMENTO 1.svg" alt="">
+                                    <div class="cardcontent1">
+                                        <p class="cardtitle1">clareamento</p>
+                                        <p class="carddescription1">Obtenha um
+                                            sorriso
+                                            mais branco e radiante com nossos
+                                            tratamentos de clareamento dental
+                                            seguros e
+                                            eficazes.</p>
+                                        <button class="card__button">Leia mais</button>
+                                        <button class="card__button secondary">Agendar
+                                            uma consulta</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="cardservico">
+                                <div class="cardservico1">
+                                    <img src="img/img/cárie 1.svg" alt="">
+                                    <div class="cardcontent1">
+                                        <p class="cardtitle1">cárie</p>
+                                        <p class="carddescription1">O tratamento
+                                            de
+                                            cárie inclui remover a lesão,
+                                            restaurar
+                                            o
+                                            dente
+                                            e prevenir com higiene e dieta.</p>
+                                        <button class="card__button">Leia mais</button>
+                                        <button class="card__button secondary">Agendar
+                                            uma consulta</button>
+                                    </div>
+
+                                </div>
+                            </div>
+                            <div class="cardservico">
+                                <div class="cardservico1">
+                                    <img
+                                        src="img/img/Facetasdeporcelanaelentesdecontato.svg"
+                                        alt="">
+                                    <div class="cardcontent1">
+                                        <p class="cardtitle1">Facetas</p>
+                                        <p class="carddescription1">Facetas
+                                            dentárias em porcelana ou resina
+                                            melhoram estética
+                                            cobrindo imperfeições, criando um
+                                            sorriso atraente com lâminas finas.</p>
+                                        <button class="card__button">Leia mais</button>
+                                        <button class="card__button secondary">Agendar
+                                            uma consulta</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="cardservico">
+                                <div class="cardservico1">
+                                    <img src="img/img/imagecanal.svg" alt="">
+                                    <div class="cardcontent1">
+                                        <p class="cardtitle1">Tratamento de
+                                            Canal</p>
+                                        <p class="carddescription1">O tratamento
+                                            de
+                                            canal remove polpa infectada, sela o
+                                            dente,
+                                            preservando-o e prevenindo futuras
+                                            infecções.</p>
+                                        <button class="card__button">Leia mais</button>
+                                        <button class="card__button secondary">Agendar
+                                            uma consulta</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="cardservico">
+                                <div class="cardservico1">
+                                    <img src="img/img/imageaparelho.svg" alt="">
+                                    <div class="cardcontent1">
+                                        <p class="cardtitle1">Aparelho
+                                            Ortodôntico</p>
+                                        <p class="carddescription1">Aparelho
+                                            ortodôntico alinha dentes, corrige
+                                            mordida, melhora
+                                            estética e função dentária, sendo
+                                            usado
+                                            para tratamentos ortodônticos.</p>
+                                        <button class="card__button">Leia mais</button>
+                                        <button class="card__button secondary">Agendar
+                                            uma consulta</button>
+                                    </div>
+
+                                </div>
+                            </div>
+
+                            
+                        </div>
+
+
+                    </div>
                 </div>
-            </div>
+            </section>
+            <!-- *********************************************************************************************************************************************** -->
+            <section>
+                <div class="sitemax">
+                    <div class="titulo">
+                        <h4>CONFIRA</h4>
+                        <h4 style="color: cadetblue;margin-left: 10px ;">NOSSO</h4>
+                        <h4 style="color: cadetblue;margin-left: 10px ;">PLANOS</h4>
+                    </div>
+                    <div class="planopai">
+                        <div class="cardplano" style="background: #1d9aa3;"">
+                            <div class=" contentplano">
+                                <div class="titleplano" style="color: white">Plano<br>
+                                    Prime</div>
+                                <div class="descriptionplano" style="color:
+                                    white">Consultas<br>
+                                    Tratamento de Canal,<br>
+                                    Extração do siso<br>
+                                    Restauração<br>
+                                    Limpeza
+                                </div>
+                                <div class="priceplano" style="color: white">R$99.99</div>
+                            </div>
+                            <button>
+                                Buy now
+                            </button>
+                        </div>
+
+                        <div class="cardplano" style="background: #1d9aa3;">
+                            <div class="contentplano">
+                                <div class="titleplano" style="color: white">Plano<br>
+                                    Plus</div>
+                                <div class="descriptionplano" style="color:
+                                    white">Lorem
+                                    ipsum dolor sit
+                                    amet, consectetur adipiscing elit. Curabitur
+                                    at
+                                    posuere eros. Interdum et malesuada fames ac
+                                    ante ipsum primis in faucibus.
+                                </div>
+                                <div class="priceplano" style="color: white">$189.99</div>
+                            </div>
+                            <button>
+                                Buy now
+                            </button>
+                        </div>
+
+                        <div class="cardplano" style="background: #1d9aa3;">
+                            <div class="contentplano">
+                                <div class="titleplano" style="color: white">Plano<br>
+                                    Gold</div>
+
+                                <div class="descriptionplano" style="color:
+                                    white">Lorem
+                                    ipsum dolor sit
+                                    amet, consectetur adipiscing elit. Curabitur
+                                    at
+                                    posuere eros. Interdum et malesuada fames ac
+                                    ante ipsum primis in faucibus.
+                                </div>
+                                <div class="priceplano" style="color: white">$299.99</div>
+                            </div>
+                            <button>
+                                Buy now
+                            </button>
+                        </div>
+
+                        <div class="cardplano" style="background: #1d9aa3;">
+                            <div class="contentplano">
+                                <div class="titleplano" style="color: white">Plano
+                                    <br>Empresarial
+                                </div>
+
+                                <div class="descriptionplano" style="color:
+                                    white">Lorem
+                                    ipsum dolor sit
+                                    amet, consectetur adipiscing elit. Curabitur
+                                    at
+                                    posuere eros. Interdum et malesuada fames ac
+                                    ante ipsum primis in faucibus.
+                                </div>
+                                <div class="priceplano" style="color: white">R$339.99</div>
+                            </div>
+                            <button>
+                                Buy now
+                            </button>
+                        </div>
+
+                    </div>
+                </div>
+            </section>
+            <!-- ************************************************************************************************************************* -->
+            <section>
+                <div class="sitemax">
+                    <div class="sobredentistas">
+
+                        <div class="dentistas" style="display:flex; justify-content: center;">
+                            <div class="carddentistas1">
+                                <img src="img/img-dentista1.png" alt="">
+                                <div class="categorydentistas"> Dra. Camila
+                                    Silva -
+                                    Especialista em Odontologia Estética</div>
+                                <div class="headingdentistas">Formação Fictícia:
+                                    Dra. Camila Silva concluiu seu mestrado em
+                                    Odontologia Estética na Universidade
+                                    Fictícia de
+                                    Odontologia Avançada (UFOA).
+                                    <div class="authordentista"> <span
+                                            class="name">CRO-12345</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="carddentistas1">
+                                <img src="img/img-dentista2.png" alt="">
+                                <div class="categorydentistas"> Dr. Pedro Santos
+                                    -
+                                    Especialista em Odontologia Estética</div>
+                                <div class="headingdentistas">Formação Fictícia:
+                                    Dr. Pedro Santos concluiu seu mestrado em
+                                    Odontologia Estética na Universidade
+                                    Fictícia de
+                                    Odontologia Avançada (UFOA).
+                                    <div class="authordentista"> <span
+                                            class="name">CRO-12345</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <div class="sobrenossa">
+                            <h1>SOBRE NOSSA CLINICA DENTISTA</h1>
+                            <p>Bem-vindo à Clínica Dentária [Nome da Sua
+                                Clínica],
+                                onde transformamos sorrisos e vidas. Nossa
+                                missão é
+                                ir além do convencional, proporcionando um
+                                ambiente
+                                acolhedor e tratamento personalizado. Contamos
+                                com
+                                uma equipe apaixonada, unindo perícia técnica
+                                com
+                                empatia. Oferecemos serviços odontológicos
+                                abrangentes, do preventivo ao estético. Nosso
+                                compromisso é garantir transparência, educação e
+                                conforto em cada etapa do tratamento. Junte-se a
+                                nós
+                                nessa jornada por um sorriso saudável e radiante
+                                na
+                                Clínica Dentária [Nome da Sua Clínica]. Cada
+                                sorriso
+                                conta uma história única, e nós valorizamos
+                                todas.
+                                Agende sua consulta e permita-nos transformar
+                                seu
+                                sorriso. Seja bem-vindo à Clínica Dentária [Nome
+                                da
+                                Sua Clínica], onde cada sorriso é prioridade.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- ********************************************************************************************************************************* -->
+            <footer class="rodape" id="contato">
+                <div class="rodape-div sitemax">
+
+                    <div class="rodape-div-1">
+                        <div class="rodape-div-1-coluna">
+                            <!-- elemento -->
+                            <img src="img/Captura_de_tela_2023-10-18_150936-removebg-preview (3).jpg" alt="">
+                            <p>SIA Trecho 5 lote 000 bloco z sala 900 - Guará,
+                                Brasília - DF, 70000-010</p>
+                        </div>
+                    </div>
+
+                    <div class="rodape-div-2">
+                        <div class="rodape-div-2-coluna">
+                            <!-- elemento -->
+                            <span><b>Contatos</b></span>
+                            <p>contato@na.na</p>
+                            <p>+55 63 99200-0000</p>
+                        </div>
+                    </div>
+
+                    <div class="rodape-div-3">
+                        <div class="rodape-div-3-coluna">
+                            <!-- elemento -->
+                            <span><b>Links</b></span>
+                            <p><a href="#servicos">Serviços</a></p>
+                            <p><a href="#empresa">Empresa</a></p>
+                            <p><a href="#sobre">Sobre</a></p>
+                        </div>
+                    </div>
+
+                    <div class="rodape-div-4">
+                        <div class="rodape-div-4-coluna">
+                            <!-- elemento -->
+                            <span><b>Outros</b></span>
+                            <p>Políticas de Privacidade</p>
+                        </div>
+                    </div>
+
+                </div>
+                <p class="rodape-direitos">NATÃ NUNES DOS ANJOS – Todos os
+                    Direitos Reservados.</p>
+            </footer>
 
 
 
 
-        </section>
-    </main>
+        </main>
 
 
-
-</body>
+        <!-- ************************************************************************************************************************************************************************************************************ -->
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+        <script type="text/javascript"
+            src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+        <script src="js/animacoes.js"></script>
 
 </html>
